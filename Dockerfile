@@ -13,7 +13,7 @@ COPY src ./src
 # Build the application
 RUN mvn package
 
-# Stage 2: Deployment stage
+# Stage 2: Deployment 
 FROM tomcat:8.5.76-jdk11-openjdk-slim AS deploy
 
 # Copy the built WAR file from the build stage to Tomcat's webapps directory
